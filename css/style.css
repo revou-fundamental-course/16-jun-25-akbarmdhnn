@@ -1,0 +1,225 @@
+/* General Styling */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+}
+
+/* Header & Navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    padding-bottom: 10px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+.nav-links .nav-button {
+    text-decoration: none;
+    color: #333;
+    padding: 8px 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    margin-left: 10px;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.nav-links .nav-button:hover {
+    background-color: #333;
+    color: #fff;
+}
+
+/* Welcome Section */
+.welcome-section {
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.welcome-section h1 {
+    font-size: 2em;
+}
+
+.banner-placeholder {
+    min-height: 300px;
+    border: 1px dashed #ccc;
+    margin-top: 20px;
+}
+
+/* Headquarter Section */
+.headquarter-section {
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+}
+
+.locations-container {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
+
+.location-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.location-circle {
+    width: 120px;
+    height: 120px;
+    border: 2px solid #333;
+    border-radius: 50%;
+    margin-bottom: 10px;
+}
+
+/* Message Us Section */
+.message-us-section {
+    display: flex;
+    gap: 30px;
+    padding: 40px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.form-wrapper, .output-wrapper {
+    flex: 1;
+}
+
+/* Form Styling with Grid */
+.form-group {
+    display: grid;
+    grid-template-columns: 120px 20px 1fr;
+    align-items: start;
+    margin-bottom: 15px;
+}
+
+.form-group:has(.radio-group) {
+    align-items: center;
+}
+
+.form-group label {
+    font-weight: normal;
+    padding-top: 8px;
+}
+
+.form-group:has(.radio-group) label {
+    padding-top: 0;
+}
+
+.form-group span {
+    padding-top: 8px;
+    font-weight: bold;
+}
+
+.form-group:has(.radio-group) span {
+    padding-top: 0;
+}
+
+.form-group input[type="text"],
+.form-group input[type="date"],
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #777;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.radio-group {
+    display: flex;
+    align-items: center;
+}
+
+.radio-group label {
+    font-weight: normal;
+    padding-top: 0;
+    margin-left: 5px;
+    margin-right: 15px;
+}
+
+button[type="submit"] {
+    width: 100%;
+    padding: 12px;
+    background-color: #f0f0f0;
+    color: #333;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 10px;
+}
+
+button[type="submit"]:hover {
+    background-color: #e0e0e0;
+}
+
+.output-box {
+    border: 1px solid #333;
+    padding: 20px;
+    height: 100%;
+    box-sizing: border-box;
+    border-radius: 5px;
+    line-height: 1.8;
+}
+
+/* Footer */
+footer {
+    text-align: right;
+    padding: 20px 0;
+}
+
+/* Responsive Design for Mobile */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .nav-links {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .locations-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 30px;
+    }
+    
+    .message-us-section {
+        flex-direction: column;
+    }
+
+    /* Kembalikan form ke layout vertikal di mobile */
+    .form-group {
+        display: block; 
+    }
+
+    .form-group span {
+        display: none; /* Sembunyikan titik dua di mobile */
+    }
+
+    .form-group label {
+        padding-top: 0;
+        margin-bottom: 5px;
+        font-weight: bold; /* Buat bold lagi di mobile agar jelas */
+    }
+}
