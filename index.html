@@ -3,9 +3,55 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tugas</title>
+    <title>Akbar Ramadhan</title>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <h1>Tugas 1</h1>
+    <header>
+        <nav class="navbar">
+            <div class="nav-brand">MyCompany</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="profile.html">Our Profile</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="welcome-section">
+            <h1>Welcome, <span id="welcome-name">Guest</span>!</h1>
+            <p>Your partner in innovation and success.</p>
+        </section>
+
+        <section id="contact-us" class="form-section">
+            <h2>Message Us</h2>
+            <form id="contact-form">
+                <div class="form-group">
+                    <label for="name">Name:</label>
+                    <input type="text" id="name" name="name" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone Number:</label>
+                    <input type="tel" id="phone" name="phone" required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea id="message" name="message" rows="5" required></textarea>
+                </div>
+                <button type="submit">Submit</button>
+            </form>
+            <div id="form-output" class="form-output"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 MyCompany. All Rights Reserved.</p>
+    </footer>
+
+    <script src="js/script.js"></script>
 </body>
 </html>
