@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="id">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
+    <title>Akbar Ramadhan</title>
     <link rel="stylesheet" href="css/style.css">
 </head>
+
 <body>
 
     <div class="container">
@@ -15,35 +17,103 @@
                     <img src="img/logorevou.png" alt="Company Logo" class="logo-image">
                 </div>
                 <div class="nav-links">
-                    <a href="#" class="nav-button">Home</a>
-                    <a href="#" class="nav-button">Our Profile</a>
-                    <a href="#" class="nav-button">Portfolio</a>
-                    <a href="#message-us" class="nav-button">Message Us</a>
+                    <a href="#" class="nav-button">Beranda</a>
+                    <a href="#about-me" class="nav-button">Tentang Saya</a>
+                    <a href="#" class="nav-button">Portofolio</a>
+                    <a href="#message-us" class="nav-button">Kirim Pesan</a>
                 </div>
             </nav>
         </header>
 
         <main>
-            <section class="welcome-section">
-                <h1>Hi <span id="welcome-name">User</span>, Welcome To Website</h1>
-                <p>ini adalah website latihan pertama</p>
-                <div class="banner-placeholder"></div>
+            <section class="home-section">
+                <div class="home-text-column">
+                    <div class="section-title">
+                        <h2>Beranda</h2>
+                    </div>
+                    <h1>Hallo User! Selamat Datang di Website saya!</h1>
+                    <p class="intro-paragraph">
+                        Website ini dirancang dan dibangun untuk memenuhi tugas dari program RevoU-Coding-Camp. Proyek ini bertujuan untuk mendemonstrasikan penerapan praktis dari teknologi web fundamental, termasuk HTML untuk struktur konten, CSS untuk styling dan desain responsif, serta JavaScript untuk fungsionalitas interaktif.
+                    </p>
+                </div>
+                <div class="home-image-column">
+                    <img src="img/akbar.jpg" alt="Foto Akbar Ramadhan">
+                </div>
             </section>
 
-            <section class="headquarter-section">
-                <h2>Our Headquarter</h2>
-                <div class="locations-container">
-                    <div class="location-item">
-                        <div class="location-circle"></div>
-                        <p>Jakarta</p>
+            <section id="about-me" class="about-section">
+                <div class="section-title">
+                    <h2>Tentang Saya</h2>
+                </div>
+
+                <div class="about-top-wrapper">
+                    <div class="about-photo-column">
+                        <img src="img/akbar.jpg" alt="Foto Akbar Ramadhan">
                     </div>
-                    <div class="location-item">
-                        <div class="location-circle"></div>
-                        <p>Bandung</p>
+                    <div class="about-details-column">
+                        <h3>Akbar Ramadhan Widiawan</h3>
+                        <p class="intro-text">Saya mahasiswa semester 6 Teknik Informatika di Universitas Pasundan yang mandiri, berpikir kritis, dan memiliki semangat tinggi dalam pengembangan produk. Antusias dalam mempelajari hal baru, terutama di bidang UI/UX desain, serta berkomitmen untuk berkontribusi positif dalam setiap proyek yang diberikan.</p>
+                        <div class="details-list">
+                            <div class="list-column">
+                                <ul>
+                                    <li><strong>Phone:</strong> <span>+62 838 7830 4828</span></li>
+                                    <li><strong>Kota:</strong> <span>Bandung, Jawa Barat</span></li>
+                                </ul>
+                            </div>
+                            <div class="list-column">
+                                <ul>
+                                    <li><strong>Email:</strong> <span>akbaramadhnnn@gmail.com</span></li>
+                                    <li><strong>Portfolio:</strong> <span><a
+                                                href="https://www.behance.net/akbarramadhan3"
+                                                target="_blank">Behance</a></span></li>
+                                </ul>
+                            </div>
+                        </div>
                     </div>
-                    <div class="location-item">
-                        <div class="location-circle"></div>
-                        <p>Surabaya</p>
+                </div>
+
+                <div class="resume-timeline-wrapper">
+                    <div class="timeline-left-column">
+                        <h3 class="resume-title">Pendidikan</h3>
+                    </div>
+                    <div class="timeline-right-column">
+                        <div class="timeline-item">
+                            <h4>S1 Teknik Informatika</h4>
+                            <h5>2022 - Sekarang</h5>
+                            <p><em>Universitas Pasundan, Bandung</em></p>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Rekayasa Perangkat Lunak</h4>
+                            <h5>2019 - 2022</h5>
+                            <p><em>SMK Budi Bakti Ciwidey, Bandung</em></p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="resume-timeline-wrapper">
+                    <div class="timeline-left-column">
+                        <h3 class="resume-title">Pengalaman</h3>
+                    </div>
+                    <div class="timeline-right-column">
+                        <div class="timeline-item">
+                            <h4>Staff Graphic Design</h4>
+                            <h5>Mar 2025 - Jun 2025</h5>
+                            <p><em>Ideal Jawa Barat</em></p>
+                            <ul>
+                                <li>Mendesain konten Instagram Feed dan Story.</li>
+                                <li>Menjaga konsistensi visual brand & bekerja sama dengan tim konten.</li>
+                                <li>Menyiapkan aset grafis untuk publikasi.</li>
+                            </ul>
+                        </div>
+                        <div class="timeline-item">
+                            <h4>Pelatihan UI/UX Design</h4>
+                            <h5>Apr 2022 - May 2022</h5>
+                            <p><em>Digitalent, Komdigi</em></p>
+                            <ul>
+                                <li>Mempelajari User Flow, UI Style Guide, dan User Research.</li>
+                                <li>Menyusun UX Case Study sebagai proyek akhir.</li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </section>
@@ -99,4 +169,5 @@
 
     <script src="js/script.js"></script>
 </body>
+
 </html>
